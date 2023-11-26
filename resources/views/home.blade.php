@@ -9,6 +9,7 @@
             {{$room->description}}
             {{$room->price}}
         </p>
+        gfds
         </div>
         
     @endforeach
