@@ -9,7 +9,6 @@
             {{$room->description}}
             {{$room->price}}
         </p>
-        {{-- gfdsuuufgfhffhfhg --}}
         </div>
         
     @endforeach
