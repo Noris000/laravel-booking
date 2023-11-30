@@ -27,4 +27,14 @@ class HomeController extends Controller
         $rooms = Rooms::all();
         return view('home', ['rooms' => $rooms]);
     }
+
+    /* @param  int  $id
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function bookRoom($id)
+    {
+        $room = Rooms::findOrFail($id);
+
+        return view('book', ['room' => $room]);
+    }
 }
